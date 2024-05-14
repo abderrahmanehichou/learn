@@ -21,31 +21,31 @@
         </div>
     </header>
 
-
-
-
-<div class="container">
-<form class="index_form">
-    <label for="idiomas">¿Qué idioma hablas?</label>
-    <select id="idiomas">
-        <option value="inglés">inglés</option>
-        <option value="francés">francés</option>
-        <option value="árabe">árabe</option>
-        <option value="de">Español</option>
-      </select>
-      <label for="idiomas">¡Qué idioma quieres aprender!</label>
-      <select id="idiomas">
-          <option value="inglés">inglés</option>
-          <option value="francés">francés</option>
-          <option value="árabe">árabe</option>
-          <option value="Español">Español</option>
-        </select>
-        <button class="index__button" type="submit">enviar</button>
+    <div class="container">
+        <form class="index_form">
+            <label for="idioma_hablado">¿Qué idioma hablas?</label>
+            <select id="idioma_hablado">
+                <option>Elige </option>
+                <option value="espanol">Español</option>
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="arabe">Árabe</option>
+            </select>
+            
+            <label for="idioma_aprender">¿Qué idioma quieres aprender?</label>
+            <select id="idioma_aprender">
+                <option>Elige </option>
+                <option value="espanol">Español</option>
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="arabe">Árabe</option>
+            </select>
+            
+            <button class="index__button" onclick="myFunction()">Enviar</button>
+        </form>
+        <div id="imagen_idioma"></div>
+    </div>
     
-
-
-</form>
-</div>
 <script src="js/index.js"></script>
 </body>
 <footer>
