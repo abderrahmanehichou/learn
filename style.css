@@ -19,7 +19,8 @@ body {
 }
 
 .Header__logo {
-    width: 30px;
+    width: 50px;
+    height: 30px;
     margin-right: 10px;
 }
 
@@ -94,6 +95,17 @@ body {
 
   }
 /*-----------------footer---------------------*/
+#site-footer {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(164, 176, 171);
+  padding: 20px;
+  height: 11rem;
+  z-index: 1000; /* Asegura que el footer esté encima de otros elementos */
+}
 footer {
     position: fixed;
     bottom: 0;
@@ -228,24 +240,106 @@ a:hover {
 
 /*---------------------------aprender---------------------*/
  /*---------------------------verbos--------------------------------------*/
-.aprender__title{
-  display:flex ;
+
+/*-------------------------------ejercicios-----------------------*/
+.quiz {
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-size:2rem ;
-  color: #6a6868;
+  height: 25rem;
+  margin: 0;
+  background-color: #f0f0f0;
 }
-.aprender__verbos{
-  display:flex ;
-  flex-direction: column;
-  
+
+.quiz-card {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
   
 }
-/*-------------------------------ejercicios-----------------------*/
-.ejercicios__radio{
-  border: solid red ;
+
+.quiz-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.quiz-card label {
+  margin-right: 10px;
+}
+
+.quiz-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-button:hover {
+  background-color: #0056b3;
+}
+
+.quiz-results {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+ 
+}
+
+.testimonial {
   display: flex;
-  
-  margin: 5rem;
-  padding: 10rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; 
+  width: 100%; 
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-sizing: border-box; 
+}
+
+.testimonial figcaption {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 1rem;
+}
+
+.testimonial figcaption img {
+  max-width: 100%; 
+  height: auto; 
+  margin-bottom: 1rem; 
+}
+
+.testimonial figcaption .info div {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #666;
 }
