@@ -7,44 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="Header">
-        <div class="Header__content">
-            <a href="index.html">  <img src="img/Union (1).png" alt=""  class="Header__logo" ></a>
-     
-            <nav class="Header__nav">
-                <a class="Header__link " href="index.html">INICIO</a>
-                <a class="Header__link" href="aprender.html">APRENDER</a>
-                <a class="Header__link " href="ejercicios.html">EJERCICIOS</a>
-                <a class="Header__link " href="acceso.html">MI CUENTA</a>
-       
-            </nav>
-        </div>
-    </header>
-    <section class="acceso-container">
+    <header>
+           
+        <nav class="navbar">
+            <img class="Header__logo" src="img/Union (1).png" alt="">
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="aprender.html">APRENDER</a></li>
+                <li><a href="ejercicios.html">EJERCICIOS</a></li>
+                <li><a href="contactus.html">CONTACT-US</a></li>
+            </ul>
+        </nav>
+ </header>
+    <form class="contact-form" action="recogida.html"  method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="input-field" placeholder="Tu nombre completo" pattern="[A-Za-z\s]+" required>
+        <br><br>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" class="input-field" placeholder="Tu correo electrónico" required>
+        <br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" class="input-field" placeholder="Tu número de teléfono" pattern="[0-9]+" required>
+        <br><br>
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" class="input-field" placeholder="Motivo de tu mensaje" required>
+        <br><br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" class="input-field" placeholder="Escribe tu mensaje aquí" rows="4" required></textarea>
+        <br><br>
+        <button type="submit" id="btn_submit" class="submit-button">Enviar</button>
+    </form>
 
-        <h2>Iniciar Sesión</h2>
-        <form id="loginForm" method="post">
 
-            <label for="username">Nombre de Usuario</label>
-            <input type="text" id="username" name="username" required>
-    
-            <label for="email">Email</label>
-            <input type="email" id="email" name="Email" required>
-    
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-    
-            <input class="buttonAcceso" type="submit" value="Iniciar Sesión">
-        </form>
-        <p id="error" class="error"></p>
-        <p>¿No tienes una cuenta?</p>
-        <br>
-        <p><a class="lickcrearcuenta" href="crearcuenta.html">Crear una cuenta</a></p>
-    
-    </section>
-</body>
-
-<script src="js/acceso.js"></script>
 
 <footer>
     <div class="footer--container">
@@ -96,4 +95,7 @@
     </div>
 </footer>
 
+<script src="js/contactus.js"></script>
+<script src="js/nav.js"></script>
+</body>
 </html>

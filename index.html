@@ -7,22 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="Header">
-        <div class="Header__content">
-            <a href="index.html">  <img src="img/Union (1).png" alt=""  class="Header__logo" ></a>
-     
-            <nav class="Header__nav">
-                <a class="Header__link " href="index.html">INICIO</a>
-                <a class="Header__link" href="aprender.html">APRENDER</a>
-                <a class="Header__link " href="ejercicios.html">EJERCICIOS</a>
-                <a class="Header__link " href="acceso.html">MI CUENTA</a>
-       
-            </nav>
-        </div>
-    </header>
+    <header>
+           
+        <nav class="navbar">
+            <img class="Header__logo" src="img/Union (1).png" alt="">
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="aprender.html">APRENDER</a></li>
+                <li><a href="ejercicios.html">EJERCICIOS</a></li>
+                <li><a href="contactus.html">CONTACT-US</a></li>
+            </ul>
+        </nav>
+ </header>
 
     <div class="container">
-        <form class="index_form" method="post">
+        <form class="index_form" action="eliger.html" method="get">
             <label for="idioma_hablado">¿Qué idioma hablas?</label>
             <select id="idioma_hablado">
                 <option>Elige </option>
@@ -40,15 +44,14 @@
                 <option value="frances">Francés</option>
                 <option value="arabe">Árabe</option>
             </select>
+            <button type="submit" id="btn_submit"  class="index__button">Enviar</button>
             
-            <button class="index__button" onclick="myFunction()">Enviar</button>
         </form>
         <div id="imagen_idioma"></div>
     </div>
 
-</body>
     
-<script src="js/index.js"></script>
+
 
 <footer >
     <div class="footer--container">
@@ -99,5 +102,7 @@
         </div>
     </div>
 </footer>
-
+<script src="js/index.js"></script>
+<script src="js/nav.js"></script>
+</body>
 </html>

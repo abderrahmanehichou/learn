@@ -592,7 +592,7 @@ function showQuestions(startIndex, endIndex) {
     }
 }
 
-// Función para verificar respuestas
+
 function verifyAnswers() {
     let score = 0;
 
@@ -606,7 +606,7 @@ function verifyAnswers() {
 
     resultsDiv.textContent = `Tu puntuación es: ${score}/3`;
 
-    // Pasar a las siguientes tres preguntas si todas las respuestas fueron correctas
+    
     if (score === 3) {
         currentQuestionIndex += 3;
         questionsContainer.innerHTML = '';
@@ -618,10 +618,8 @@ function verifyAnswers() {
     }
 }
 
-// Mostrar las primeras tres preguntas al cargar la página
 showQuestions(currentQuestionIndex, currentQuestionIndex + 3);
 
-// Verificar respuestas al hacer clic en el botón
 verifyAnswersButton.addEventListener('click', verifyAnswers); 
  
 

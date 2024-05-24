@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,75 +7,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="Header">
-        <div class="Header__content">
-            <a href="index.html">  <img src="img/Union (1).png" alt=""  class="Header__logo" ></a>
-     
-            <nav class="Header__nav">
-                <a class="Header__link " href="index.html">INICIO</a>
-                <a class="Header__link" href="aprender.html">APRENDER</a>
-                <a class="Header__link " href="ejercicios.html">EJERCICIOS</a>
-                <a class="Header__link " href="acceso.html">MI CUENTA</a>
-       
-            </nav>
-        </div>
-    </header>
-  <section>
+    <header>
+           
+        <nav class="navbar">
+            <img class="Header__logo" src="img/Union (1).png" alt="">
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="aprender.html">APRENDER</a></li>
+                <li><a href="ejercicios.html">EJERCICIOS</a></li>
+                <li><a href="contactus.html">CONTACT-US</a></li>
+            </ul>
+        </nav>
+ </header>
+
+ <section>
     <div class="aprender__title">
     <h1 class="text-center">Verbos</h1>
     </div>
-     <div class="aprender__verbos">
-            <a href="">vivir</a>
-            <a href="">haber</a>
-            <a href="">ser</a>
-            <a href="">estar</a>
-            <a href="">tener</a>
-            <a href="">ir</a>
-            <a href="">hacer</a>
-            <a href="">comer</a>
-            <a href="">poder</a>
-            <a href="">decir</a>
-            <a href="">saber</a>
-            <a href="">ver</a>
-            <a href="">venir</a>
-            <a href="">querer</a>
-            <a href="">haber</a>
-            <a href="">amar</a>
-            <a href="">salir</a>
-            <a href="">dar</a>
-            <a href="">cantar</a>
-            <a href="">poner</a>
-            <a href="">hablar</a>
-            <a href="">jugar</a>
-            <a href="">coger</a>
-            <a href="">escribir</a>
-            <a href="">dormir</a>
-            <a href="">leer</a>
-            <a href="">volver</a>
-            <a href="">traer</a>
-            <a href="">pedir</a>
-            <a href="">empezar</a>
-            <a href="">conozer</a>
-     
+    <div class="aprender__verbos">
+        <a href="#" onclick="mostrarConjugacion('vivir')">vivir</a>
+        <a href="#" onclick="mostrarConjugacion('haber')">haber</a>
+        <a href="#" onclick="mostrarConjugacion('ser')">ser</a>
+        <a href="#" onclick="mostrarConjugacion('estar')">estar</a>
+        <a href="#" onclick="mostrarConjugacion('tener')">tener</a>
+        <a href="#" onclick="mostrarConjugacion('ir')">ir</a>
+        <a href="#" onclick="mostrarConjugacion('hacer')">hacer</a>
+        <a href="#" onclick="mostrarConjugacion('comer')">comer</a>
+        <a href="#" onclick="mostrarConjugacion('poder')">poder</a>
+        <a href="#" onclick="mostrarConjugacion('decir')">decir</a>
+        <a href="#" onclick="mostrarConjugacion('saber')">saber</a>
+        <a href="#" onclick="mostrarConjugacion('ver')">ver</a>
+        <a href="#" onclick="mostrarConjugacion('venir')">venir</a>
+        <a href="#" onclick="mostrarConjugacion('querer')">querer</a>
+        <a href="#" onclick="mostrarConjugacion('amar')">amar</a>
+        <a href="#" onclick="mostrarConjugacion('salir')">salir</a>
+        <a href="#" onclick="mostrarConjugacion('dar')">dar</a>
+        <a href="#" onclick="mostrarConjugacion('cantar')">cantar</a>
+        <a href="#" onclick="mostrarConjugacion('poner')">poner</a>
+        <a href="#" onclick="mostrarConjugacion('hablar')">hablar</a>
+        <a href="#" onclick="mostrarConjugacion('jugar')">jugar</a>
+        <a href="#" onclick="mostrarConjugacion('coger')">coger</a>
+        <a href="#" onclick="mostrarConjugacion('escribir')">escribir</a>
+        <a href="#" onclick="mostrarConjugacion('dormir')">dormir</a>
+        <a href="#" onclick="mostrarConjugacion('leer')">leer</a>
+        <a href="#" onclick="mostrarConjugacion('volver')">volver</a>
+        <a href="#" onclick="mostrarConjugacion('traer')">traer</a>
+        <a href="#" onclick="mostrarConjugacion('pedir')">pedir</a>
+        <a href="#" onclick="mostrarConjugacion('empezar')">empezar</a>
+        <a href="#" onclick="mostrarConjugacion('conocer')">conocer</a>
     </div>
+    <div id="conjugaciones"></div>
   </section>
+    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="js/aprender.js"></script>
-<script src="js/site-footer.js"></script>
-  <footer id="site-footer">
+<footer >
     <div class="footer--container">
         <div class="column">
             <h2>Company</h2>
@@ -124,6 +115,11 @@
         </div>
     </div>
 </footer>
+<script src="js/aprender.js"></script>
+<script src="js/site-footer.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>
 
 
 
